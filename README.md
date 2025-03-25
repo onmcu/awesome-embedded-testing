@@ -1,6 +1,6 @@
 # Embedded Testing
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Check Links](https://github.com/onmcu/awesome-embedded-testing/actions/workflows/links.yml/badge.svg)](https://github.com/org/repo/actions/workflows/links.yml)
+[![Check Links](https://github.com/onmcu/awesome-embedded-testing/actions/workflows/links.yml/badge.svg)](https://github.com/onmcu/awesome-embedded-testing/actions/workflows/links.yml)
 
 Curated list of tools and resources for testing Embedded and Low-level software
 
