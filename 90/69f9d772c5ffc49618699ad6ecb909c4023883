@@ -1,0 +1,29 @@
+.github/workflows/awesome-lint.yml
+  s_d2b41e57b6d64e::t_2ce96aec6070ec 1-19
+README.md
+  s_d2b41e57b6d64e::t_773cce214cb890 52
+  s_d2b41e57b6d64e::t_55cf71b491f157 5,7-8
+  s_d2b41e57b6d64e::t_bb8597f9dbe023 6
+  s_d2b41e57b6d64e::t_cdeaeea77f70e3 3
+  s_d2b41e57b6d64e::t_a0a4d1b26dcea1 1,4,9-19,22,24-26,29-33,36-51,53-69
+contributing.md
+  s_d2b41e57b6d64e::t_6fa797fad00125 1-19
+license
+  s_d2b41e57b6d64e::t_0cdf5a82bc1c9c 1-121
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "9069f9d772c5ffc49618699ad6ecb909c4023883",
+  "prompts": {},
+  "sessions": {
+    "s_d2b41e57b6d64e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e9c3fcda-0f57-4394-98f9-1468ebc26836",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Joël Schulz-Andres <joel@systemscape.de>"
+    }
+  }
+}
