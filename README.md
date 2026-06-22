@@ -22,7 +22,8 @@ Curated list of tools and resources for testing Embedded and Low-level software
 
 ## Test Frameworks
 ### Rust Test Frameworks
-- **[embedded-test](https://crates.io/crates/embedded-test)** Rust test harness and runner for embedded devices ![Lang: Rust](https://img.shields.io/badge/Lang:-Rust-fe7d37)
+- **[embedded-test](https://crates.io/crates/embedded-test)** – Rust test harness and runner for embedded devices ![Lang: Rust](https://img.shields.io/badge/Lang:-Rust-fe7d37)
+- **[defmt-test](https://github.com/knurling-rs/defmt/tree/main/firmware/defmt-test)** – Test harness that lets you write and run unit tests on your device as if using the built-in `#[test]` attribute. ![Lang: Rust](https://img.shields.io/badge/Lang:-Rust-fe7d37)
 
 ### General Embedded Testing Frameworks
 - **[Ceedling/Unity](https://github.com/ThrowTheSwitch/Ceedling)** – Popular C-based unit testing and build framework, great for small to medium-sized embedded projects. ![Lang: C](https://img.shields.io/badge/Lang:-C-blue)
@@ -54,6 +55,7 @@ Curated list of tools and resources for testing Embedded and Low-level software
 ### Test Automation & Hardware-in-the-Loop (HIL)
 - **[Labgrid](https://github.com/labgrid-project/labgrid)** – Automation framework for hardware-in-the-loop testing, integrates smoothly with continuous integration. ![Lang: Python](https://img.shields.io/badge/Lang:-Python-3775A9)
 - **[OpenHTF](https://github.com/google/openhtf)** – Hardware testing framework from Google designed for automated manufacturing tests and HIL testing. ![Lang: Python](https://img.shields.io/badge/Lang:-Python-3775A9)
+- **[OnMCU](https://github.com/onmcu/onmcu-rs)** – CLI for remote MCU development, flashing, and testing on real hardware hosted on the OnMCU platform. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
 
 ### Examples & Reference Projects
 - **[Nasa JPL's F Prime](https://github.com/nasa/fprime)** – NASA's open-source flight software framework, extensively tested and validated. ![Lang: C++](https://img.shields.io/badge/Lang:-C++-violet)
