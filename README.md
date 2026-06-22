@@ -1,60 +1,69 @@
-# Embedded Testing
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Check Links](https://github.com/onmcu/awesome-embedded-testing/actions/workflows/links.yml/badge.svg)](https://github.com/onmcu/awesome-embedded-testing/actions/workflows/links.yml)
+# Awesome Embedded Testing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Curated list of tools and resources for testing Embedded and Low-level software
+> Tools, frameworks, and resources for testing embedded and low-level software, covering unit testing, mocking, hardware simulation, static and dynamic analysis, continuous integration, and hardware-in-the-loop automation.
 
-## Table of Contents
-- [Embedded Testing](#embedded-testing)
-  - [Table of Contents](#table-of-contents)
-  - [Books, blogs and training materials](#books-blogs-and-training-materials)
-  - [Test Frameworks](#test-frameworks)
-    - [Rust Test Frameworks](#rust-test-frameworks)
-    - [General Embedded Testing Frameworks](#general-embedded-testing-frameworks)
-    - [Mocking and Hardware Simulation](#mocking-and-hardware-simulation)
-    - [Embedded Integration & Continuous Integration (CI)](#embedded-integration--continuous-integration-ci)
-    - [Static & Dynamic Analysis](#static--dynamic-analysis)
-    - [Embedded-Specific Testing Techniques & Tools](#embedded-specific-testing-techniques--tools)
-    - [Test Automation & Hardware-in-the-Loop (HIL)](#test-automation--hardware-in-the-loop-hil)
-    - [Examples & Reference Projects](#examples--reference-projects)
+<p align="center">
+  <img src="media/embedded_testing.svg" width="300" alt="Awesome Embedded Testing logo">
+</p>
 
-## Books, blogs and training materials
+## Contents
+
+- [Test Frameworks](#test-frameworks)
+  - [Rust Test Frameworks](#rust-test-frameworks)
+  - [General Embedded Testing Frameworks](#general-embedded-testing-frameworks)
+  - [Mocking and Hardware Simulation](#mocking-and-hardware-simulation)
+  - [Continuous Integration](#continuous-integration)
+  - [Static and Dynamic Analysis](#static-and-dynamic-analysis)
+  - [Embedded-Specific Techniques and Tools](#embedded-specific-techniques-and-tools)
+  - [Test Automation and Hardware-in-the-Loop](#test-automation-and-hardware-in-the-loop)
+  - [Examples and Reference Projects](#examples-and-reference-projects)
 
 ## Test Frameworks
+
 ### Rust Test Frameworks
-- **[embedded-test](https://crates.io/crates/embedded-test)** Rust test harness and runner for embedded devices ![Lang: Rust](https://img.shields.io/badge/Lang:-Rust-fe7d37)
+
+- [embedded-test](https://crates.io/crates/embedded-test) - Rust test harness and runner for embedded devices.
+- [defmt-test](https://github.com/knurling-rs/defmt/tree/main/firmware/defmt-test) - Rust test harness that lets you write and run unit tests on your device as if using the built-in `#[test]` attribute.
 
 ### General Embedded Testing Frameworks
-- **[Ceedling/Unity](https://github.com/ThrowTheSwitch/Ceedling)** – Popular C-based unit testing and build framework, great for small to medium-sized embedded projects. ![Lang: C](https://img.shields.io/badge/Lang:-C-blue)
-- **[GoogleTest (gtest)](https://github.com/google/googletest)** – Widely used and highly customizable C++ testing framework, commonly adopted in embedded C++ projects. ![Lang: C++](https://img.shields.io/badge/Lang:-C++-violet)
-- **[CppUTest](https://github.com/cpputest/cpputest)** – Flexible testing framework tailored specifically to embedded software, emphasizing memory safety and simplicity. ![Lang: C++](https://img.shields.io/badge/Lang:-C++-violet)
-- **[Catch2](https://github.com/catchorg/Catch2)** – Modern C++ testing framework known for ease of use and expressive assertions, lightweight enough for embedded targets. ![Lang: C++](https://img.shields.io/badge/Lang:-C++-violet)
+
+- [Ceedling/Unity](https://github.com/ThrowTheSwitch/Ceedling) - Popular C-based unit testing and build framework, great for small to medium-sized embedded projects.
+- [GoogleTest](https://github.com/google/googletest) - Widely used and highly customizable C++ testing framework, commonly adopted in embedded C++ projects.
+- [CppUTest](https://github.com/cpputest/cpputest) - C and C++ testing framework tailored specifically to embedded software, emphasizing memory safety and simplicity.
+- [Catch2](https://github.com/catchorg/Catch2) - Modern C++ testing framework known for ease of use and expressive assertions, lightweight enough for embedded targets.
 
 ### Mocking and Hardware Simulation
-- **[CMock](https://github.com/ThrowTheSwitch/CMock)** – Generates mock objects automatically for C, ideal for testing interactions with hardware-dependent code. ![Lang: C](https://img.shields.io/badge/Lang:-C-blue)
-- **[Fake Function Framework (FFF)](https://github.com/meekrosoft/fff)** – Lightweight, simple mocking framework for C-based embedded software. ![Lang: C](https://img.shields.io/badge/Lang:-C-blue)
-- **[Renode](https://github.com/renode/renode)** – Powerful framework for hardware simulation and testing, allowing execution and debugging of embedded binaries without actual hardware. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
-- **[QEMU](https://github.com/qemu/qemu)** – Widely adopted open-source emulator, very useful for full-system simulation of embedded platforms during testing. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
-- **[embedded-hal-mock](https://github.com/dbrgn/embedded-hal-mock)** – Mocks for testing embedded-hal based drivers without hardware access. ![Lang: Rust](https://img.shields.io/badge/Lang:-Rust-fe7d37)
 
-### Embedded Integration & Continuous Integration (CI)
-- **[PlatformIO](https://github.com/platformio/platformio-core)** – Cross-platform build tool and package manager, ideal for automating builds and tests for embedded projects. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
-- **[Embench](https://github.com/embench/embench-iot)** – Open-source benchmarking suite specifically targeting IoT-class embedded systems. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
-- **[Robot Framework](https://github.com/robotframework/robotframework)** – Generic acceptance-test automation framework, commonly used for higher-level integration and system tests. ![Lang: Python](https://img.shields.io/badge/Lang:-Python-3775A9)
+- [CMock](https://github.com/ThrowTheSwitch/CMock) - Generates mock objects automatically for C, ideal for testing interactions with hardware-dependent code.
+- [Fake Function Framework (FFF)](https://github.com/meekrosoft/fff) - Lightweight, simple mocking framework for C-based embedded software.
+- [Renode](https://github.com/renode/renode) - Multi-architecture framework for hardware simulation and testing, allowing execution and debugging of embedded binaries without actual hardware.
+- [QEMU](https://github.com/qemu/qemu) - Widely adopted open-source emulator, very useful for full-system simulation of embedded platforms during testing.
+- [embedded-hal-mock](https://github.com/dbrgn/embedded-hal-mock) - Mocks for testing Rust embedded-hal based drivers without hardware access.
 
-### Static & Dynamic Analysis
-- **[Cppcheck](https://github.com/danmar/cppcheck)** – Popular static analysis tool specifically tailored for C and C++ codebases. ![Lang: C/C++](https://img.shields.io/badge/Lang:-C/C++-fe7d37)
-- **[Valgrind](https://github.com/paulfloyd/freebsd_valgrind)** – Dynamic analysis tool useful for memory leak detection and error tracking. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
-- **[Clang Sanitizers](https://github.com/google/sanitizers)** – Effective runtime debugging tools for detecting memory safety errors in embedded C/C++ applications. ![Lang: C/C++](https://img.shields.io/badge/Lang:-C/C++-fe7d37)
+### Continuous Integration
 
-### Embedded-Specific Testing Techniques & Tools
-- **[Embedded Artistry's Embedded Testing Guides](https://github.com/embeddedartistry/embedded-resources)** – Curated resources and examples for best practices in embedded software testing. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
-- **[Tracealyzer](https://github.com/Percepio)** *(Commercial with free tiers)* – Real-time trace visualization for debugging and performance analysis of embedded systems. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
+- [PlatformIO](https://github.com/platformio/platformio-core) - Cross-platform build tool and package manager, ideal for automating builds and tests for embedded projects.
+- [Embench](https://github.com/embench/embench-iot) - Open-source benchmarking suite specifically targeting IoT-class embedded systems.
+- [Robot Framework](https://github.com/robotframework/robotframework) - Generic Python-based acceptance-test automation framework, commonly used for higher-level integration and system tests.
 
-### Test Automation & Hardware-in-the-Loop (HIL)
-- **[Labgrid](https://github.com/labgrid-project/labgrid)** – Automation framework for hardware-in-the-loop testing, integrates smoothly with continuous integration. ![Lang: Python](https://img.shields.io/badge/Lang:-Python-3775A9)
-- **[OpenHTF](https://github.com/google/openhtf)** – Hardware testing framework from Google designed for automated manufacturing tests and HIL testing. ![Lang: Python](https://img.shields.io/badge/Lang:-Python-3775A9)
+### Static and Dynamic Analysis
 
-### Examples & Reference Projects
-- **[Nasa JPL's F Prime](https://github.com/nasa/fprime)** – NASA's open-source flight software framework, extensively tested and validated. ![Lang: C++](https://img.shields.io/badge/Lang:-C++-violet)
-- **[LittlevGL](https://github.com/lvgl/lvgl)** – Embedded GUI library extensively using unit tests and automated integration testing. ![Lang: C](https://img.shields.io/badge/Lang:-C-blue)
+- [Cppcheck](https://github.com/danmar/cppcheck) - Popular static analysis tool specifically tailored for C and C++ codebases.
+- [Valgrind](https://valgrind.org) - Dynamic analysis tool useful for memory leak detection and error tracking.
+- [Clang Sanitizers](https://github.com/google/sanitizers) - Effective runtime debugging tools for detecting memory safety errors in embedded C and C++ applications.
+
+### Embedded-Specific Techniques and Tools
+
+- [Embedded Artistry's Embedded Resources](https://github.com/embeddedartistry/embedded-resources) - Curated resources and examples for best practices in embedded software testing.
+- [Tracealyzer](https://github.com/Percepio) - Real-time trace visualization for debugging and performance analysis of embedded systems (commercial with free tiers).
+
+### Test Automation and Hardware-in-the-Loop
+
+- [Labgrid](https://github.com/labgrid-project/labgrid) - Python-based automation framework for hardware-in-the-loop testing, integrates smoothly with continuous integration.
+- [OpenHTF](https://github.com/google/openhtf) - Python hardware testing framework from Google designed for automated manufacturing tests and hardware-in-the-loop testing.
+- [OnMCU](https://github.com/onmcu/onmcu-rs) - CLI for remote MCU development, flashing, and testing on real hardware hosted on the OnMCU platform.
+
+### Examples and Reference Projects
+
+- [NASA JPL's F Prime](https://github.com/nasa/fprime) - NASA's open-source C++ flight software framework, extensively tested and validated.
+- [LVGL](https://github.com/lvgl/lvgl) - Embedded GUI library written in C, extensively using unit tests and automated integration testing.
