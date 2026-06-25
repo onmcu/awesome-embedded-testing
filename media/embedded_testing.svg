@@ -24,7 +24,7 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.5733333"
-     inkscape:cx="264.72458"
+     inkscape:cx="263.4534"
      inkscape:cy="323.51696"
      inkscape:window-width="2560"
      inkscape:window-height="1403"
@@ -85,15 +85,15 @@
      font-size="42.7887px"
      font-weight="600"
      id="text26"
-     style="stroke-width:1;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;paint-order:markers stroke fill"><tspan
+     style="stroke-width:1;stroke:none;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;paint-order:markers stroke fill;fill:#8b8c8d;fill-opacity:1"><tspan
        x="299.8642"
        dy="-2.1394341"
        id="tspan22"
-       style="stroke-width:1;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;paint-order:markers stroke fill">Embedded</tspan><tspan
+       style="stroke-width:1;stroke:none;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;paint-order:markers stroke fill;fill:#8b8c8d;fill-opacity:1">Embedded</tspan><tspan
        x="299.8642"
        dy="49.634872"
        id="tspan24"
-       style="stroke-width:1;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;paint-order:markers stroke fill">Testing</tspan></text>
+       style="stroke-width:1;stroke:none;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;paint-order:markers stroke fill;fill:#8b8c8d;fill-opacity:1">Testing</tspan></text>
   <text
      x="243.49553"
      y="95.586967"
