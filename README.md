@@ -56,6 +56,7 @@ Curated list of tools and resources for testing Embedded and Low-level software
 - **[Labgrid](https://github.com/labgrid-project/labgrid)** – Automation framework for hardware-in-the-loop testing, integrates smoothly with continuous integration. ![Lang: Python](https://img.shields.io/badge/Lang:-Python-3775A9)
 - **[OpenHTF](https://github.com/google/openhtf)** – Hardware testing framework from Google designed for automated manufacturing tests and HIL testing. ![Lang: Python](https://img.shields.io/badge/Lang:-Python-3775A9)
 - **[OnMCU](https://github.com/onmcu/onmcu-rs)** – CLI for remote MCU development, flashing, and testing on real hardware hosted on the OnMCU platform. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
+- **[SiliconRig](https://github.com/siliconrig/srig-cli)** – CLI, Python SDK, and GitHub Action for flashing and testing firmware on real boards (ESP32-S3, STM32, RP2350) hosted on the SiliconRig platform. ![Lang: Multi](https://img.shields.io/badge/Lang:-Multi-blueviolet)
 
 ### Examples & Reference Projects
 - **[Nasa JPL's F Prime](https://github.com/nasa/fprime)** – NASA's open-source flight software framework, extensively tested and validated. ![Lang: C++](https://img.shields.io/badge/Lang:-C++-violet)
