@@ -1,0 +1,21 @@
+.github/workflows/awesome-lint.yml
+  s_8e3fd7125be82c::t_10e70979b6c967 13-14
+README.md
+  s_8e3fd7125be82c::t_10e70979b6c967 3,6-8,16-21,37,43,45,51,53,57,60,62,67,69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "cad6991c1156c914f96b4c1f173fac58fcb0b05a",
+  "prompts": {},
+  "sessions": {
+    "s_8e3fd7125be82c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a08f50-ca46-7641-aebc-17e00b98d9f6",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Joël Schulz-Andres <joel@systemscape.de>"
+    }
+  }
+}
